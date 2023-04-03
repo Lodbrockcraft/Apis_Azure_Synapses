@@ -66,6 +66,13 @@ Esse grupo é necessário para que tenha uma comunicação do service principal 
 - Adal
 - Pandas
 
+# Project template
+
+Sample codes will be grouped by subject in folder. As I investigate the api, I create more folders and include example code.
+Each code has the Microsoft website link with the documentation of the call.
+
+There may be some English mistakes, which I correct over time. I still don't master the language.
+
 # Documentation used
-https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/
-https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
+- https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/
+- https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
