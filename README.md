@@ -22,7 +22,7 @@ Follow the correspondence of the fields, later on we use other names
 - tenant = tenant id
 - password = client secret
 
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png)
+![Mobile 1](https://github.com/Lodbrockcraft/Apis_Azure_Synapses/blob/main/assets/ids_prompcomand.png)
 
 The other way would be to create the user application directly in the azure portal.
 - Sign-in to the Azure portal.
@@ -33,19 +33,19 @@ The other way would be to create the user application directly in the azure port
 - Under Redirect URI, select Web for the type of application you want to create. Enter the URI where the access token is sent to.
 - Select Register.
 
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png)
+![Mobile 1](https://github.com/Lodbrockcraft/Apis_Azure_Synapses/blob/main/assets/create-app.png)
 
 When creating the main service you will need to save 3 information about it.
 - client id
 - tenant id
 - client secret
 
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png)
+![Mobile 1](https://github.com/Lodbrockcraft/Apis_Azure_Synapses/blob/main/assets/create-app-ids.png)
 
 The client secret you need to generate in the Certificates & secrets part, clicking on new secret.
 The client secret value will be the value field.
 
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png)
+![Mobile 1](https://github.com/Lodbrockcraft/Apis_Azure_Synapses/blob/main/assets/create-app-secret.png)
 
 Now that we know how to create the user.
 We need to add this user to a security group. This group can be created in the using conventional way. This group is required to have service principal communication with the azure resource. You can even use this security group for other service principal that will be used in other Microsoft APIs.
