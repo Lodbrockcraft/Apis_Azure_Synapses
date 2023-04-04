@@ -2,12 +2,12 @@
 
 # Information this project
 
-This project aims to explain very simply how to create and configure a user application, to access the Azure Synapse APIs, and provides some example codes to obtain the access token, and how to perform some post and get.
+This project aims to explain very simply how to create and configure a service principal, to access the Azure Synapse APIs, and provides some example codes to obtain the access token, and how to perform some post and get.
 
-## Create user application
+## Create service principal
 
-The user application has the purpose of generating a token that will validate our access to the Synapse api.
-Two ways to create the user application.
+The service principal has the purpose of generating a token that will validate our access to the Synapse api.
+Two ways to create the service principal.
 
 The simplest way is to run the following command in the Azure Cloud Shell in the Azure portal itself. Remembering that you need to make sure that the logged in user has sufficient permissions for the task.
 
@@ -24,7 +24,7 @@ Follow the correspondence of the fields, later on we use other names
 
 ![Mobile 1](https://github.com/Lodbrockcraft/Apis_Azure_Synapses/blob/main/assets/ids_prompcomand.png)
 
-The other way would be to create the user application directly in the azure portal.
+The other way would be to create the service principal directly in the azure portal.
 - Sign-in to the Azure portal.
 - Search for and Select Azure Active Directory.
 - Select App registrations, then select New registration.
