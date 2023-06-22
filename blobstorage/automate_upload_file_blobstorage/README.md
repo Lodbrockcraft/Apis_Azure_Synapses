@@ -38,6 +38,8 @@ To generate the connection string, use this documentation.
 
 In this project we use a Blob SAS URL, generated directly from the container where the files will be stored.
 
+# Explanation of code points
+
 This line creates a FileSystemWatcher object that monitors changes to a directory.
 ```bash
 $watcher = New-Object System.IO.FileSystemWatcher
