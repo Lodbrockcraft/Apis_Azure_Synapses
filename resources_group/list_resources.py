@@ -1,5 +1,5 @@
-# Documentação
-# https://learn.microsoft.com/en-us/rest/api/resources/resources/list-by-resource-group
+# This script aims to extract a list of all resources that exist within a specific resource group.
+# Documentation: https://learn.microsoft.com/en-us/rest/api/resources/resources/list-by-resource-group
 
 # Import libarys
 import requests
@@ -14,7 +14,6 @@ client_secret = ''
 authority_url = f'https://login.microsoftonline.com/{tenant_id}'
 resource_url = 'https://management.azure.com/'
 
-workspace_name = ''
 resourceGroupName = ''
 subscriptionId = ''
 
