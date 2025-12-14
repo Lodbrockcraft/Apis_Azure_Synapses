@@ -13,7 +13,7 @@ resource_url = 'https://graph.microsoft.com'
 url_api = 'https://graph.microsoft.com/v1.0/users?$select=id,assignedLicenses,companyName,country,userPrincipalName, department,displayName,employeeId,givenName,jobTitle,mail,createdDateTime,onPremisesDomainName,onPremisesSamAccountName,officeLocation,postalCode,city,state,streetAddress,telephoneNumber,surname,usageLocation,alternateEmailAddress,userType,memberOf,licenseDetails&$top=999'
 
 #===== Generate token for accessing api =====
-def access_token_header():
+def access_token_header(authority_url, resource_url, client_id, client_secret):
     context = adal.AuthenticationContext(authority=authority_url,
                                         validate_authority=True,
                                         api_version=None)
@@ -33,7 +33,7 @@ url_pag = url_api
 df = pd.DataFrame()
 
 while url_pag != '':
-    js = requests.get(url_pag, headers=access_token_header()).json()
+    js = requests.get(url_pag, headers=access_token_header(authority_url, resource_url, client_id, client_secret)).json()
     data = pd.json_normalize(js['value'])
     df = pd.concat([df,data])
     if '@odata.nextLink' in js:
